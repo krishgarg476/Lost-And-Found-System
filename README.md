@@ -37,3 +37,9 @@ Follow these steps to set up the project locally on your machine.
 ```bash
 git clone [https://github.com/krishgarg476/Lost-And-Found-System.git](https://github.com/krishgarg476/Lost-And-Found-System.git)
 cd Lost-And-Found-System
+
+### 2. Backend Setup
+Navigate to the backend folder and install dependencies:
+```bash
+cd backend
+npm install
