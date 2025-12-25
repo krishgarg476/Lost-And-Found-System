@@ -37,9 +37,50 @@ Follow these steps to set up the project locally on your machine.
 ```bash
 git clone [https://github.com/krishgarg476/Lost-And-Found-System.git](https://github.com/krishgarg476/Lost-And-Found-System.git)
 cd Lost-And-Found-System
+```
 
 ### 2. Backend Setup
 Navigate to the backend folder and install dependencies:
 ```bash
 cd backend
 npm install
+```
+
+Create a .env file in the backend folder and add your credentials:
+```bash
+PORT=8000
+CORS_ORIGIN=*
+ACCESS_TOKEN_SECRET=your_random_secret
+REFRESH_TOKEN_SECRET=your_random_secret
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_api_key
+CLOUDINARY_API_SECRET=your_api_secret
+DB_HOST=localhost
+DB_USER=root
+DB_PASSWORD=
+DB_NAME=lost_and_found
+```
+
+Database Setup:
+
+Create a database named lost_and_found in MySQL.
+Import the db.sql file provided in the root folder to create tables.
+Start the server:
+```bash 
+npm run dev
+```
+
+3. Frontend Setup
+Open a new terminal, navigate to the frontend folder, and install dependencies:
+```bash
+cd ../frontend
+npm install
+```
+Create a .env file in the frontend folder:
+```bash
+VITE_API_URL=http://localhost:8000/api/v1
+```
+Start the application:
+```bash
+npm run dev
+```
